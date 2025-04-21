@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Slf4j
 public class LogInterceptor implements HandlerInterceptor {
 
-  // 어드민 컨트롤러 호출 전 실행
+  // 어드민 인증 여부를 확인
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
     log.info("ADMIN CONTROLLER REQUEST");
