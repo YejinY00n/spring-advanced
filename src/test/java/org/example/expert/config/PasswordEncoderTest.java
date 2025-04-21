@@ -13,6 +13,7 @@ class PasswordEncoderTest {
     @InjectMocks
     private PasswordEncoder passwordEncoder;
 
+    // TODO: Lv3 테스트 코드 리팩토링 지점
     @Test
     void matches_메서드가_정상적으로_동작한다() {
         // given

@@ -28,6 +28,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @Import(LogInterceptor.class)
 class UserAdminControllerTest {
 
+  // TODO: Lv4 Interceptor, AOP 테스트
 //  @Autowired
 //  private MockMvc mockMvc;
 //

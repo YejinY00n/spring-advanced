@@ -38,6 +38,7 @@ class ManagerServiceTest {
     @InjectMocks
     private ManagerService managerService;
 
+    // TODO: Lv3 테스트 코드 리팩토링 지점
     @Test
     public void manager_목록_조회_시_Todo가_없다면_IRE_에러를_던진다() {
         // given
@@ -49,6 +50,7 @@ class ManagerServiceTest {
         assertEquals("Todo not found", exception.getMessage());
     }
 
+    // TODO: Lv3 테스트 코드 리팩토링 지점
     @Test
     void todo의_user가_null인_경우_예외가_발생한다() {
         // given

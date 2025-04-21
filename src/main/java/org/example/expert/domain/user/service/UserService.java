@@ -25,6 +25,7 @@ public class UserService {
 
     @Transactional
     public void changePassword(long userId, UserChangePasswordRequest userChangePasswordRequest) {
+        // TODO: Lv1 리팩토링 지점 (RequestDTO 에 Validation 추가)
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new InvalidRequestException("User not found"));
 

@@ -34,6 +34,7 @@ class CommentServiceTest {
     @InjectMocks
     private CommentService commentService;
 
+    // TODO: Lv3 테스트 코드 리팩토링 지점
     @Test
     public void comment_등록_중_할일을_찾지_못해_에러가_발생한다() {
         // given
